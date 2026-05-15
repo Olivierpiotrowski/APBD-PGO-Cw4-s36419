@@ -72,8 +72,6 @@ public class Main {
 
         System.out.println(p2.equals(kopiaTestera));
 
-        System.out.println("\n=== PROGRAMIŚCI W ZESPOLE ===");
-
         zespol.wypiszProgramistow();
     }
 }
