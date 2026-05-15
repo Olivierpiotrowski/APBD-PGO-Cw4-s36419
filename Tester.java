@@ -42,8 +42,17 @@ public class Tester extends Pracownik {
 
     @Override
     public String toString() {
-        return super.toString() +
-                " | Tester | Automatyzujący: " + czyAutomatyzujacy +
-                " | Scenariusze: " + liczbaScenariuszy;
+
+        String typTestera;
+
+        if (czyAutomatyzujacy) {
+            typTestera = "Automatyzujący";
+        } else {
+            typTestera = "Manualny";
+        }
+
+    return super.toString() +
+            " | Tester: " + typTestera +
+            " | Scenariusze: " + liczbaScenariuszy;
     }
 }
